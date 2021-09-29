@@ -44,12 +44,11 @@ public class Bejegyzes {
     public String toString() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
                 if (szerkesztve == letrejott) {
-                    return szerzo  + likeok + formatter.format(letrejott) + '\'' + tartalom;
+                    return szerzo  + " " + likeok + " " + formatter.format(letrejott) +"\n" + tartalom;
                 }
                 else {
-                    return szerzo  + likeok + formatter.format(letrejott) + '\''
-                            + "Szerkesztve: " + formatter.format(szerkesztve)
-                            + '\'' + tartalom;
+                    return szerzo  + " " + likeok + " " + formatter.format(letrejott) + "\nSzerkesztve: " + formatter.format(szerkesztve)+ "\n" + tartalom;
+
                 }
     }
 

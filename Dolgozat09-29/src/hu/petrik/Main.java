@@ -15,6 +15,7 @@ public class Main {
         Bejegyzes a2 = new Bejegyzes("Pénztáros", "Négyszáz és húsz forintot szeretnék elkérni");
         Bejegyzesek.add(a1);
         Bejegyzesek.add(a2);
-
+        System.out.println(a1);
+        System.out.println(a2);
     }
 }

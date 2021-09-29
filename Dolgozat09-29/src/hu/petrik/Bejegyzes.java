@@ -23,4 +23,8 @@ public class Bejegyzes {
                 + "Szerkesztve: " + szerkesztve + '\''
                  + tartalom;
     }
+
+    public void Like() {
+        this.likeok ++;
+    }
 }

@@ -20,19 +20,21 @@ public class Bejegyzes {
     public String getSzerzo() {
         return szerzo;
     }
-
     public String getTartalom() {
         return tartalom;
+    }
+
+    public void setTartalom(String tartalom) {
+        this.tartalom = tartalom;
+        this.szerkesztve = LocalDateTime.now();
     }
 
     public Integer getLikeok() {
         return likeok;
     }
-
     public LocalDateTime getLetrejott() {
         return letrejott;
     }
-
     public LocalDateTime getSzerkesztve() {
         return szerkesztve;
     }

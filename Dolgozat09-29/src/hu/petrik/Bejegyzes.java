@@ -1,6 +1,7 @@
 package hu.petrik;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Bejegyzes {
     private String szerzo;
@@ -41,9 +42,15 @@ public class Bejegyzes {
 
     @Override
     public String toString() {
-        return szerzo  + likeok + letrejott + '\''
-                + "Szerkesztve: " + szerkesztve + '\''
-                 + tartalom;
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+                if (szerkesztve == letrejott) {
+                    return szerzo  + likeok + formatter.format(letrejott) + '\'' + tartalom;
+                }
+                else {
+                    return szerzo  + likeok + formatter.format(letrejott) + '\''
+                            + "Szerkesztve: " + formatter.format(szerkesztve)
+                            + '\'' + tartalom;
+                }
     }
 
     public void Like() {

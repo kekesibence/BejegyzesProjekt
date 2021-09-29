@@ -17,6 +17,26 @@ public class Bejegyzes {
         this.szerkesztve = LocalDateTime.now();
     }
 
+    public String getSzerzo() {
+        return szerzo;
+    }
+
+    public String getTartalom() {
+        return tartalom;
+    }
+
+    public Integer getLikeok() {
+        return likeok;
+    }
+
+    public LocalDateTime getLetrejott() {
+        return letrejott;
+    }
+
+    public LocalDateTime getSzerkesztve() {
+        return szerkesztve;
+    }
+
     @Override
     public String toString() {
         return szerzo  + likeok + letrejott + '\''
@@ -25,6 +45,6 @@ public class Bejegyzes {
     }
 
     public void Like() {
-        this.likeok ++;
+        this.likeok++;
     }
 }

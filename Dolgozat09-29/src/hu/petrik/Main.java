@@ -3,8 +3,13 @@ package hu.petrik;
 import javafx.scene.control.skin.SliderSkin;
 
 import javax.swing.*;
+import java.io.File;
+import java.io.Reader;
 import java.util.*;
 import java.util.Scanner;
+import java.util.List;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class Main {
 
@@ -18,9 +23,9 @@ public class Main {
         System.out.println(a1);
         System.out.println(a2);
 
-        BekerosFeladat();
-        Ellenőrzés();
-
+        //BekerosFeladat();
+        BeolvasosFeladat();
+        Ellenorzes();
     }
 
     public static void BekerosFeladat() {
@@ -36,7 +41,11 @@ public class Main {
         }
     }
 
-    public static void Ellenőrzés() {
+    public static void BeolvasosFeladat() {
+
+    }
+
+    public static void Ellenorzes() {
         for (int i = 0; i < Bejegyzesek.size(); i++){
             System.out.println(Bejegyzesek.get(i));
         }
